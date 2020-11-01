@@ -57,14 +57,14 @@ void main()
 	int n;
 	cout << "Enter amount of people in queue : ";
 	cin >> n;
-	int* h = new int[n];  //hour
-	int* m = new int[n];  //minutes
-	int* l = new int[n];  //how long
-	int* d = new int[n];  //when its done
-	int* t = new int[n];  //time when you come
-	int* eh = new int[n];  //hour when it ends
-	int* em = new int[n];  //min when it ends
-	char ch;  //for : symbol
+	int* h = new int[n];
+	int* m = new int[n];
+	int* l = new int[n]; 
+	int* d = new int[n];  
+	int* t = new int[n];  
+	int* eh = new int[n]; 
+	int* em = new int[n]; 
+	char ch;
 	cout << "\nEnter info about arrival and service time\nin this way -> hours:minutes service time\n";
 	for (int i = 0; i < n; i++)
 	{
@@ -107,34 +107,3 @@ void main()
 	}cout << endl;
 	system("pause");
 }
-
-//Enter amount of people in queue : 12
-//
-//Enter info about arrival and service time
-//in this way->hours : minutes service time
-//09 : 05 25
-//09 : 08 17
-//09 : 10 5
-//09 : 12 3
-//09 : 15 6
-//09 : 29 14
-//10 : 12 36
-//10 : 25 8
-//10 : 30 17
-//10 : 45 15
-//11 : 05 25
-//11 : 30 17
-//
-//Personal number.Ticket window number.Arrival time.Service time.End of service.
-//1       ~1 ~9 : 5     25 min. 9 : 30
-//2       ~2 ~9 : 8     17 min. 9 : 25
-//3       ~3 ~9 : 10    5 min.  9 : 15
-//4       ~4 ~9 : 12    3 min.  9 : 15
-//5       ~3 ~9 : 15    6 min.  9 : 21
-//6       ~2 ~9 : 29    14 min. 9 : 43
-//7       ~1 ~10 : 12   36 min. 10 : 48
-//8       ~2 ~10 : 25   8 min.  10 : 33
-//9       ~3 ~10 : 30   17 min. 10 : 47
-//10      ~2 ~10 : 45   15 min. 11 : 0
-//11      ~1 ~11 : 5    25 min. 11 : 30
-//12      ~1 ~11 : 30   17 min. 11 : 47
